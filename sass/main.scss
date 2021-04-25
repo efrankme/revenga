@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap");
+
+// Set your brand colors
+$azul-oscuro: #1d2d47;
+// $azul-oscuro2: #223555;
+// $brown: #757763;
+$beige-light: #b99b5f;
+$beige-lighter: #f5f6f8;
+
+// Update Bulma's global variables
+$grey-dark: $azul-oscuro;
+// $grey-darker: $azul-oscuro2;
+$grey-light: $beige-light;
+$grey-lighter: $beige-lighter;
+// $primary: $azul-oscuro;
+// $link: $pink;
+
+// Update some of Bulma's component variables
+$body-background-color: white;
+$body-family: "Nunito", sans-serif;
+$family-secondary: "Libre Baskerville", serif;
+$text-strong: inherit;
+$title-color: inherit;
+$subtitle-color: inherit;
+$title-weight: 700;
+$subtitle-weight: 700;
+$body-size: 1em;
+$body-color: #223555;
+
+$input-background-color: transparent;
+
+// Import only what you need from Bulma
+@import "../bulma/bulma.sass";
+
+.is-size-00 {
+	font-size: 4rem;
+}
+
+.navbar-item img {
+	max-height: 100%;
+}
+
+a.navbar-item.is-active {
+	color: $grey-light;
+}
+
+.title {
+	font-family: $family-secondary;
+}
+
+hr.landing {
+	width: 60%;
+	margin: auto;
+}
+
+hr.metodo {
+	width: 30%;
+	height: 1px;
+	margin: auto;
+}
+
+hr.home {
+	width: 30%;
+	height: 2px;
+	margin: auto;
+}
+
+hr.historia {
+	width: 30%;
+	height: 1px;
+}
+
+hr.foot {
+	width: 10%;
+	height: 1px;
+}
+
+.banner-home {
+	background: url(../img/banner-home.jpg) center / cover;
+}
+.banner-gracias {
+	background: url(../img/banner-gracias.jpg) center / cover;
+}
+.banner-land {
+	background: url(../img/banner-land.jpg) center / cover;
+}
+.banner-hist {
+	background: url(../img/banner-hist.jpg) center / cover;
+}
+.banner-metodo {
+	background: url(../img/banner-metodo.jpg) center / cover;
+}
+.banner-metodo2 {
+	background: url(../img/banner-metodo2.jpg) center / cover;
+}
+
+.middle-land {
+	background: url(../img/middle-land.jpg) center / cover;
+}
+.middle-land2 {
+	background: url(../img/middle-land2.jpg) center / cover;
+}
+.middle-home {
+	background: url(../img/middle-home.jpg) center / cover;
+}
+
+form .input,
+form .button {
+	width: 75%;
+	font-size: 0.9rem;
+}
+
+.has_border {
+	border-right: 1px solid #b99b5f;
+}
+
+.nosotros {
+	line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+	.is-size-00 {
+		font-size: 3rem;
+	}
+
+  .container.is-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .section.is-medium.pr-0 { // seccion historia
+    padding-right: 1.5rem !important;
+  }
+  
+  .column.is-6.pl-6.p-0 { //seccion historia
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+	.has_border {
+		border-right: none;
+	}
+}
