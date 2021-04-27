@@ -121,6 +121,14 @@ form .button {
 	line-height: 1.5;
 }
 
+
+form .input, form .button {
+    width: 100%;
+    font-size: 1rem;
+}
+
+
+
 @media (max-width: 768px) {
 	.is-size-00 {
 		font-size: 3rem;
